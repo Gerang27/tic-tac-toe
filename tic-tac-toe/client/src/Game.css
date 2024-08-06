@@ -1,0 +1,150 @@
+/* Game.css */
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Game container */
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .game-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Header text colors */
+  .text-blue {
+    color: #007bff;
+  }
+  
+  .text-red {
+    color: #d32f2f;
+  }
+  
+  /* Scoreboard */
+  .scoreboard {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .scoreboard h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #388e3c;
+  }
+  
+  .scoreboard p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Board styles */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .board-square {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Default color for text */
+  }
+  
+  .board-square.x {
+    color: #007bff; /* Blue color for X */
+  }
+  
+  .board-square.o {
+    color: #d32f2f; /* Red color for O */
+  }
+  
+  .board-square:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.05);
+  }
+  
+  /* Prompt styles */
+  .prompt {
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .prompt h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #388e3c;
+  }
+  
+  .prompt-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #388e3c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .prompt-button:hover {
+    background-color: #2c6e49;
+    transform: scale(1.05);
+  }
+  
+  .stop-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #d32f2f; /* Red color for stop button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .stop-button:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,78 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.start-game-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #28a745; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-game-button:hover {
+  background-color: #218838; /* Darker green */
+  transform: scale(1.05);
+}
+
+.games-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px; /* Center the list and limit width */
+}
+
+.game-item {
+  padding: 15px;
+  background-color: #ffffff; /* White background for better contrast */
+  border: 1px solid #e0e0e0; /* Lighter border for a softer look */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-item:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2 {
+  color: #333; /* Darker text color for headings */
+}
+
+.tic-tac-toe-header {
+  font-family: 'Arial', sans-serif;
+  font-size: 4rem;
+  color: #333;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff5733, #f0f0f0, #ff5733);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color-swing 3s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes color-swing {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
